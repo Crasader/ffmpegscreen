@@ -1,0 +1,2 @@
+# ffmpegscreen
+基于夏曹俊老师的ffmpeg开发的屏幕录像机源码
