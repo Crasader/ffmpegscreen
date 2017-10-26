@@ -1,0 +1,2 @@
+ffmpeg.exe -i test.mp4 -pix_fmt bgra test.rgb
+ffmpeg.exe -i test.mp4 -f s16le test.pcm
