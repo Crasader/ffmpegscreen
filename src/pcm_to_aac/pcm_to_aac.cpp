@@ -16,7 +16,8 @@ using namespace std;
 
 int main()
 {
-	char infile[] = "16.wav";//暂时没有找到数据源
+	//char infile[] = "16.wav";
+	char infile[] = "out.pcm";
 
 	//char outfile[] = "test.wmv";//wmv解封装不同播放器兼容不太好
 	char outfile[] = "out.aac";
