@@ -35,7 +35,10 @@ int main()
 	int width = 848;
 	int height = 480;
 	int fps = 25;
-
+#if 0 //截屏数据文件的宽高
+	width = 1920;
+	height = 1080;
+#endif
 	//1 create codec
 	AVCodec* codec = avcodec_find_encoder(AV_CODEC_ID_H264);
 	if (!codec)

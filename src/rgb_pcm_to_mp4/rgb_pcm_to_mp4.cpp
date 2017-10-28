@@ -11,10 +11,15 @@ int main()
 
 	XVideoWriter* xw = XVideoWriter::Get(0);
 
+	//初始化并创建输出封装器
 	cout<<xw->Init(outfile);
+
+	//添加视频流
 	cout << xw->AddVideoStream();
+	//添加音频流
 	cout << xw->AddAudioStream();
 
+	//打开rgb图像数据文件
 	FILE* fp = fopen(rgbfile, "rb");
 	if (!fp)
 	{
@@ -26,6 +31,8 @@ int main()
 	{
 		cout << "open " << rgbfile << " success!" << endl;
 	}
+
+	//打开pcm音频数据文件
 	FILE* fa = fopen(pcmfile, "rb");
 	if (!fa)
 	{
@@ -38,6 +45,7 @@ int main()
 		cout << "open " << pcmfile << " success!" << endl;
 	}
 
+	//写入文件头
 	xw->WriteHead();
 
 	int size = xw->inWidth*xw->inHeight * 4;
