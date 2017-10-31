@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="XScreen">
+    <file>stop.png</file>
+    <file>record_pressed.png</file>
+    <file>record_hot.png</file>
+    <file>record_normal.png</file>
+    <file>logo.png</file>
+    <file>logo.ico</file>
+    <file>close.png</file>
+    <file>mini.png</file>
+  </qresource>
+</RCC>
